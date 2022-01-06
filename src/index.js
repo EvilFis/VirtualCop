@@ -3,21 +3,15 @@ import ReactDOM from 'react-dom';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
-import Header from './components/header'
-import Tools from './components/Tools'
+import App from "./App";
 
-import './sass/style.scss';
 
 ReactDOM.render(
-    <div className="container">
-        <Header />
-        <Tools />
-    </div>,
+    <React.StrictMode>
+        <App/>
+    </React.StrictMode>,
   document.getElementById('root')
 );
-
-
-
 
 
 serviceWorkerRegistration.unregister();
